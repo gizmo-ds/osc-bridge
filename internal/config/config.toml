@@ -1,0 +1,16 @@
+addr = "127.0.0.1:9001"
+
+[[bridges]]
+enable = false
+name = "B1"
+addr = "127.0.0.1:10001"
+patterns = [
+    "/avatar/change",
+]
+
+[[bridges]]
+name = "B2"
+addr = "127.0.0.1:10002"
+patterns = [
+    "/avatar/change",
+]
