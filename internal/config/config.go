@@ -19,14 +19,18 @@ type (
 	}
 )
 
-func Load(filename string) (*Config, error) {
+func Load(data []byte) (*Config, error) {
+	var conf Config
+	err := toml.Unmarshal(data, &conf)
+	return &conf, err
+}
+
+func LoadFromFile(filename string) (*Config, error) {
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
-	var conf Config
-	err = toml.Unmarshal(data, &conf)
-	return &conf, err
+	return Load(data)
 }
 
 func (b Bridge) Key() string {

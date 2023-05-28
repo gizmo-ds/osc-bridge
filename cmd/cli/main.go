@@ -31,7 +31,7 @@ func main() {
 			},
 		},
 		Action: func(ctx *cli.Context) error {
-			conf, err := config.Load(ctx.String("config"))
+			conf, err := config.LoadFromFile(ctx.String("config"))
 			if err != nil {
 				return err
 			}
