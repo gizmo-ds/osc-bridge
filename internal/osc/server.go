@@ -1,8 +1,8 @@
 package osc
 
 import (
-	"osc-bridge/internal/config"
-	"osc-bridge/internal/hubsub"
+	"github.com/gizmo-ds/osc-bridge/internal/config"
+	"github.com/gizmo-ds/osc-bridge/internal/hubsub"
 
 	"github.com/hypebeast/go-osc/osc"
 )

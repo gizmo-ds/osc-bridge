@@ -1,4 +1,4 @@
-module osc-bridge
+module github.com/gizmo-ds/osc-bridge
 
 go 1.19
 

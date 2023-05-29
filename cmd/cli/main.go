@@ -2,9 +2,10 @@ package main
 
 import (
 	"os"
-	"osc-bridge/internal/config"
-	"osc-bridge/internal/hubsub"
-	osc2 "osc-bridge/internal/osc"
+
+	"github.com/gizmo-ds/osc-bridge/internal/config"
+	"github.com/gizmo-ds/osc-bridge/internal/hubsub"
+	osc2 "github.com/gizmo-ds/osc-bridge/internal/osc"
 
 	"github.com/hypebeast/go-osc/osc"
 	"github.com/urfave/cli/v2"
