@@ -25,7 +25,7 @@ OSC Bridge 解决了 VRChat 无法同时监听多个 OSC 端口的问题。这�
 | bridges.addr     | 桥接的地址。                 |
 | bridges.patterns | 桥接要匹配的 OSC 模式。      |
 
-> `bridges.patterns` 配置项仅
+> `bridges.patterns` 配置项仅负责匹配接收的 OSC 模式
 
 ## 感谢
 

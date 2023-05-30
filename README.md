@@ -25,6 +25,8 @@ You can download the precompiled files from [Release](https://github.com/gizmo-d
 | bridges.addr     | The address of the bridge.                                      |
 | bridges.patterns | The OSC patterns to be matched by the bridge.                   |
 
+> The `bridges.patterns` configuration item is responsible for matching the received OSC patterns only.
+
 ## Thanks
 
 Thanks to [JetBrains](https://jb.gg/OpenSourceSupport) for the open source license(s).
