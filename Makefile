@@ -12,6 +12,7 @@ all: windows-amd64
 initialize:
 	mkdir -p build
 	cp config_example.toml build/config.toml
+	cp README*.md LICENSE build
 
 generate:
 	go generate ./...
