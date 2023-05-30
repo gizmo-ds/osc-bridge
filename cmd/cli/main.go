@@ -38,6 +38,9 @@ func main() {
 			}
 
 			for _, b := range conf.Bridges {
+				if b.Enable != nil && !*b.Enable {
+					continue
+				}
 				hub.Sub(b, func(msg *osc.Message, conf config.Bridge) {
 					_ = osc2.Send(conf.Addr, msg)
 				})
