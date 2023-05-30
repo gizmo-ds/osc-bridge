@@ -26,10 +26,12 @@ jobs:
 
       - name: Build
         if: startsWith(github.ref, 'refs/tags/')
-        run: make && make sha256sum
+        run: make clean && make && make sha256sum
 
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: build/*
+          files: |
+            build/*.zip
+            build/*.zip.sha256
