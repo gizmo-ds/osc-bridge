@@ -5,6 +5,8 @@
 [![Release](https://img.shields.io/github/v/release/gizmo-ds/osc-bridge.svg?include_prereleases&style=flat-square)](https://github.com/gizmo-ds/osc-bridge/releases/latest)
 [![License](https://img.shields.io/github/license/gizmo-ds/osc-bridge?style=flat-square)](./LICENSE)
 
+Engine | [简体中文](./README_zh.md)
+
 OSC Bridge solves the problem of VRChat's inability to listen to multiple OSC ports simultaneously. This project revolutionizes the way users interact with VRChat by providing a seamless communication bridge for OSC protocols.
 
 With OSC Bridge, developers can create custom interactions, synchronize audiovisual elements, and integrate external devices into VRChat environments. Experience the freedom to create, connect, and interact like never before in VRChat with OSC Bridge.
