@@ -7,7 +7,7 @@ import (
 )
 
 func TestLoadFromFile(t *testing.T) {
-	conf, err := LoadFromFile("../../config.toml")
+	conf, err := LoadFromFile("../../config_example.toml")
 	assert.NoError(t, err)
 	assert.Equal(t, conf.Addr, "127.0.0.1:9001")
 	assert.Equal(t, len(conf.Bridges), 2)
