@@ -16,5 +16,5 @@ windows-amd64: generate
 	GOOS=windows GOARCH=amd64 go build $(FLAGS) -o $(OUTDIR)/$(NAME)-$@.exe $(MAIN)
 
 sha256sum:
-	rm -r $(OUTDIR)/*.sha256
+	rm -rf $(OUTDIR)/*.sha256
 	cd $(OUTDIR); for file in *; do sha256sum $$file > $$file.sha256; done
